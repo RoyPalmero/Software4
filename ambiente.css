@@ -16,7 +16,7 @@ header{
 .cabecera{
     float: inline-start;
     padding: 5em;
-    margin-left: 5em;
+    margin-left: 8em;
     margin-top: 1em;
     font-size: large;
 }
@@ -49,7 +49,6 @@ header{
     margin-top: 4em;
     float: inline-start;
     font-size: x-large;
-   /* background-color: rgb(153, 204, 105); */
     padding: 0.5em;
 }
 
@@ -59,18 +58,54 @@ body{
 }
 .trabajos{
     background-color: rgb(153, 204, 105);
-    margin-left: 10em;
-    margin-right: 10em;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.slider-container{
+    display: flex;
+    width: 50%;
+    height: 50vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 1em;
+    margin: 1em;
+    left: 28em;
+    position: relative;
+}
+.slider-item{
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+.mercadopago{
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: aqua;
+}
+.filam{
+    margin-left: 2em;
+    margin-right: 2em;
+
+}
+.filam::after{
+    content:"" ;
+    clear: both;
+    display: table;
+}   
+.columnam{
+    width: 40%;
+    float: inline-start;
+    margin: 1em;
 }
 
-
 .filaf{
-    padding-left: 42.5%;
-    padding-right: 42.5%;
-    position: absolute;
+    padding-left: 37%;
+    padding-right: 30%;
+    position:relative ;
     bottom: 0;
     background-color: rgb(153, 204, 105);
-
+    margin: 1em;
 }
 .filaf::after{
     content:"" ;
@@ -80,6 +115,6 @@ body{
 .igual{
     margin: 1em;
     float: inline-start;
-
+    padding: 1em;
 }
 
